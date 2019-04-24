@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello! | belwerks</title>
+    <link rel="icon" type="image/png" sizes="72x72" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,700">
+    <style>
+      body {
+        font-family: "Crimson Text", Georgia, serif;
+        font-weight: 400;
+        color: #343434;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+      h1, h2 {
+        font-family: "Montserrat", Helvetica, sans-serif;
+        font-weight: 700;
+      }
+      h1, h2, p {
+        margin: 0 0 1rem;
+      }
+      h1 {
+        font-size: 3.25rem;
+        color: #cf1020;
+        line-height: 1.1;
+      }
+      h2, .h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+      }
+      .nobr {
+        white-space: nowrap;
+      }
+      .red {
+        color: #cf1020;
+      }
+      .black {
+        color: #343434;
+      }
+      img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: #cf1020;
+        box-shadow: 0 0.05em 0 rgba(207, 16, 32, 0.5);
+        transition: color 0.2s, box-shadow 0.2s;
+      }
+      a:hover, a:focus {
+        color: #770913;
+        box-shadow: 0 0.15em 0 #770913;
+      }
+      [role="presentation"] {
+        width: 6.25rem;
+        height: auto;
+        margin: 1.5rem auto 2.5rem;
+      }
+      [role="banner"] {
+        margin-bottom: 2.5rem;
+      }
+      header, article, nav, aside {
+        max-width: 40rem;
+        width: calc(100% - 2rem);
+        height: auto;
+        margin: 0 auto;
+      }
+      [role="contentinfo"] {
+        text-align: center;
+        margin: 2.5rem auto 1.5rem;
+      }
+      .visually-hidden {
+        border: 0 !important;
+        clip: rect(0 0 0 0) !important;
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+      }
+      @media screen and (min-width: 47rem) {
+        [role="presentation"] {
+          max-width: 40rem;
+          width: calc(100% - 2rem);
+          text-align: right;
+          margin-bottom: 0;
+        }
+        [role="presentation"] img {
+          display: inline-block;
+          width: 7rem;
+        }
+        [role="banner"] {
+          margin-top: -2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body data-modal-open="0">
+    <div id="wrap">
+      <div role="presentation">
+        <img src="belwerks-logo-main.png" srcset="belwerks-logo-main.png 1x, belwerks-logo-main@2x.png 2x" alt="">
+      </div>
+      <header role="banner">
+        <h1>Hello! <br><span class="h2 black">You've reached <span class="red">bel</span>werks.</span></h1>
+      </header>
+      <main role="main">
+        <section>
+          <header>
+            <h2>The werk of <span class="red nobr">Stephen Belyea</span></h2>
+          </header>
+          <article>
+            <p>I'm a front end developer with a heavy focus on accessibility, performance, and user interaction for any device or screen size. I like working on stuff that anyone can use and I'll put in the effort to make sure they're able to do so easily.</p>
+            <p>A developer since 2012, I started in a LAMP stack, with a primary focus on WordPress. After some time in .NET, AngularJS, and early experience with TypeScript, I've settled into a modern JavaScript framework world. Most of my time has been in React, with projects in Angular and (increasingly) Vue to round out the framework trio. Jumping into new tech is a great way to learn and discover all the best and less-best parts of everything.</p>
+            <p>Feel free to reach out on <a href="https://www.linkedin.com/in/sebelyea" target="_blank">LinkedIn<span class="visually-hidden"> link opens new tab</span></a> if you’re in Kitchener and want to grab some coffee. Thanks for stopping by!</p>
+          </article>
+        </section>
+      </main>
+
+      <footer role="contentinfo">
+        <p><small>&copy;<span id="year"></span> <strong><span class="red">bel</span>werks</strong> | Stephen Belyea</small></p>
+      </footer>
+    </div>
+    <script>
+      document.getElementById('year').innerText = (new Date()).getFullYear();
+    </script>
+  </body>
+</html>
